@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  tileserver:
+    image: maptiler/tileserver-gl
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    ports:
+      - 80:80
+    volumes:
+      - ./data:/data
+      - ./styles:/usr/src/app/node_modules/tileserver-gl-styles/styles
+      - ./fonts:/usr/src/app/node_modules/tileserver-gl-styles/fonts

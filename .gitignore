@@ -1,7 +1,10 @@
+.idea
 docs/_build
 node_modules
 test_data
 data
+styles
+fonts
 light
 plugins
 config.json
